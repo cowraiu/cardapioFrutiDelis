@@ -40,23 +40,111 @@ h1 {
   -webkit-overflow-scrolling: touch;
 }
 
-/* O SEGREDO: Impedir o card de encolher ou empilhar */
 .card {
-  flex: 0 0 160px !important;         /* NÃO encolhe, NÃO cresce, fixa em 160px */
-  width: 160px !important;
-  background-color: #ffffff;
+  flex-shrink: 0;
+  background-color: rgb(233, 175, 245);
   border-radius: 12px;
   padding: 12px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+
+.pequeno {
+  width: 140px;
+}
+
+.medio {
+  width: 160px;
+}
+
+.grande {
+  width: 190px;
+}
+
+.extra {
+  width: 220px;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
 }
 
 /* Imagem dentro do card */
 .card img {
   width: 100%;
-  height: 110px;
   object-fit: contain;
   margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+
+/* Tamanho da imagem conforme o copo */
+.pequeno img {
+  height: 100px;
+}
+
+.medio img {
+  height: 130px;
+}
+
+.grande img {
+  height: 160px;
+}
+
+.extra img {
+  height: 200px;
+}
+
+
+
+
+.complementos-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+.complementos-card h1 {
+  margin-bottom: 15px;
+}
+
+
+.complemento-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+.complemento-item:last-child {
+  border-bottom: none;
+}
+
+
+.complemento-item img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+
+.complemento-item span {
+  flex: 1;
+  font-size: 1rem;
+}
+
+
+.complemento-item p {
+  font-weight: bold;
+  color: #6b21a8;
 }
 
 .card h3 {
