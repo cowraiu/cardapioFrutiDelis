@@ -26,6 +26,21 @@ h1 {
   color: #2d3748;
 }
 
+
+caixa-1 {
+  /* Adiciona espaço na parte inferior da primeira div */
+  margin-bottom: 20px;
+  size: 20px; 
+}
+
+/* OU */
+
+.caixa-2 {
+  /* Adiciona espaço na parte superior da segunda div */
+  margin-top: 20px; 
+}
+
+
 /* 🚀 CONTAINER DA FILEIRA ROLÁVEL 🚀 */
 .scroll-row {
   display: flex !important;           /* Força o alinhamento lado a lado */
@@ -107,6 +122,8 @@ h1 {
   padding: 20px;
   margin-top: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  flex: 0 0 auto;
+  width: 300px;
 }
 
 
