@@ -426,7 +426,7 @@ function App() {
       </div>
 
       <div>
-        <h3 className="text-5xl border-8 border-amber-100 font-extrabold text-amber-600" >PICOLÉS</h3>
+        <h3 className="text-5xl  text-amber-600" >COPOS</h3>
 
 
         <div className="scroll-row">
